@@ -9,12 +9,14 @@
    <version>1.0.0</version>
    <packaging>jar</packaging>
 
+<!--
    <parent>
       <groupId>com.rapid7</groupId>
       <artifactId>java-root-pom</artifactId>
       <version>1.9.6</version>
       <relativePath />
    </parent>
+-->
 
    <scm>
       <connection>scm:git:git@github.com:rapid7/nexpose_java_api.git</connection>
@@ -22,5 +24,16 @@
       <url>https://github.com/rapid7/nexpose_java_api</url>
       <tag>HEAD</tag>
    </scm>
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
